@@ -1,0 +1,235 @@
+:root{
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .archivo-narrow {
+        font-family: "Archivo Narrow", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    
+    --corPreto: #000;
+    --corCinzaMaisEscuro: #111111;
+    --corCinzaEscuro: #262626;
+    --corCinzaClaro: #383838;
+    --corAmarelo: #FCC812;
+    --corBranco: #fff;
+
+    --fonteBebasNeue: "Bebas Neue";
+    --fonteArchivoNarrow: "Archivo Narrow";
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: var(--fonteBebasNeue);
+}
+h2, h3, p{
+    font-family: var(--fonteArchivoNarrow);
+}
+a:visited, a:link {
+    color: currentColor;
+}
+body{
+    background-color: var(--corCinzaMaisEscuro);
+    color: var(--corBranco);
+    font-family: var(--fonteArchivoNarrow);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* ESTILOS CABEÇALHO */
+.header{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corCinzaEscuro);
+    max-width: 100%;
+    
+    font-size: 1.5em;
+    color: var(--corBranco);
+    font-family: var(--fonteBebasNeue);
+}
+
+
+.menu{
+    display: flex;
+    min-width: 1200px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu li a:hover{
+    background-color: var(--corAmarelo);
+    color: var(--corCinzaEscuro);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+/* ESTILOS MAIN */
+main{
+    padding-top: 50px;
+    min-width: 320px;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* ESTILOS HOME */
+#home,#sobre,#projetos,#habilidades, footer{
+    padding: 0em 2em;
+}
+
+#home {
+    background: var(--corBranco);
+    color: var(--corCinzaEscuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home article{
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+#home aside{
+    padding-top: 100px;
+    padding-left: 100px;
+    
+    line-height: 50px;
+    
+}
+
+#home section.nome-sobrenome{
+    background-image: url('../components/img/Circulo.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+
+    border: 1px solid aqua;
+}
+
+#home #nome{
+    border: 1px solid aqua;
+    
+    width: max-content;
+    font-size: 5em;
+    font-weight: 500;
+}
+#home #sobrenome{
+    border: 1px solid aqua;
+
+    width: max-content;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+#home section.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+
+#home button{
+    font-family: var(--fonteArchivoNarrow);
+    font-weight: bold;
+    border: none;
+}
+
+#home button#linkedin{
+    color: var(--corBranco);
+    background-color:var(--corCinzaClaro);
+    font-weight: 400;
+    font-size: 2em;
+    height: 2em;
+    width: 75%;
+
+    border-radius: 15px;
+}
+#home #redes{
+    color: var(--corAmarelo);
+    background-color: var(--corBranco);
+    text-decoration: underline;
+    font-size: larger;
+
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+#home picture{
+    display: contents;
+}
+#home picture img{
+    width: 400px;
+    padding-top: 30px;
+    margin-right: 100px;
+    object-fit: contain;
+
+    min-height: 550px;
+}
+
+
+
+/* ESTILOS SOBRE */
+#sobre{
+    background: var(--corCinzaClaro);
+    color: var(--corBranco);
+}
+
+/* ESTILOS PROJETOS */
+#projetos{
+    background: var(--corBranco);
+    color: var(--corPreto);
+}
+
+/* ESTILOS HABILIDADES */
+#habilidades{
+    background: var(--corCinzaClaro);
+    color: var(--corBranco);
+}
+
+
+
+/* ESTILOS RODAPÉ */
+footer{
+    background-color: var(--corCinzaEscuro);
+    color: var(--corBranco);
+}
