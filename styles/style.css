@@ -22,8 +22,6 @@
     --fonteArchivoNarrow: "Archivo Narrow";
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -53,6 +51,7 @@ body{
 }
 
 
+@layer header, main;
 
 /* ESTILOS CABEÇALHO */
 .header{
@@ -69,7 +68,6 @@ body{
     color: var(--corBranco);
     font-family: var(--fonteBebasNeue);
 }
-
 
 ul.menu{
     display: flex;
@@ -90,7 +88,6 @@ ul.menu{
 }
 
 
-
 /* ESTILOS MAIN */
 main{
     min-width: 320px;
@@ -99,8 +96,9 @@ main{
 }
 
 
+
 /* ESTILOS HOME */
-#home,#sobre,#projetos,#habilidades{
+#home,#sobre,#meus-projetos,#habilidades{
     padding: 60px 100px 0px 100px;
 }
 
@@ -163,7 +161,6 @@ main{
 
     padding-top: 30px;
 }
-
 
 #home button{
     font-family: var(--fonteArchivoNarrow);
@@ -237,15 +234,43 @@ main{
     margin-right: 100px;
     margin-bottom: 100px;
 
-    border: 6px solid var(--corBranco);
+    border: 8px solid var(--corBranco);
     border-radius: 100%;
 }
 
+
+
 /* ESTILOS PROJETOS */
-#projetos{
+#meus-projetos{
     background: var(--corBranco);
     color: var(--corPreto);
 }
+
+#meus-projetos h1{
+    padding-bottom: 35px;
+    font-size: 3em;
+    text-align: left;
+}
+
+#meus-projetos p{
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+#meus-projetos section.projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 22em);
+    row-gap: 2em;
+    align-content: space-between;
+    padding-bottom: 130px;
+}
+
+#meus-projetos picture img.thumbnail{
+    border: 0.3em solid var(--corAmarelo);
+    height: 200px;
+}
+
+
 
 /* ESTILOS HABILIDADES */
 #habilidades{
@@ -253,7 +278,33 @@ main{
     color: var(--corBranco);
 }
 
+#habilidades h1{
+    padding-bottom: 35px;
+    font-size: 3em;
+    text-align: right;
+}
 
+#habilidades p{
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+#habilidades section{
+    display: flex;
+}
+
+#habilidades section aside.selector{
+    display: grid;
+    grid-template-columns: repeat(3, 11em);
+    row-gap: 1em;
+    align-content: space-between;
+    padding-bottom: 100px;
+}
+
+#habilidades picture img.icons{
+    border-radius: 20px;
+    height: 150px;
+}
 
 /* ESTILOS RODAPÉ */
 footer{
