@@ -49,7 +49,6 @@ body{
     background-color: var(--corCinzaMaisEscuro);
     color: var(--corBranco);
     font-family: var(--fonteArchivoNarrow);
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -60,48 +59,49 @@ body{
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--corCinzaEscuro);
-    max-width: 100%;
     
-    font-size: 1.5em;
+    width: 100vw;
+    height: 2em;    
+    font-size: 2em;
     color: var(--corBranco);
     font-family: var(--fonteBebasNeue);
 }
 
 
-.menu{
+ul.menu{
     display: flex;
-    min-width: 1200px;
+    width: 1200px;
 }
 
 .menu li a{
     display: block;
-    padding: 10px 20px;
+    padding: 14px 20px;
 }
 
 .menu li a:hover{
     background-color: var(--corAmarelo);
     color: var(--corCinzaEscuro);
     transition: 0.5s ease-in-out;
+
+    height: 2em;
 }
 
 
 
 /* ESTILOS MAIN */
 main{
-    padding-top: 50px;
     min-width: 320px;
     max-width: 1200px;
-
     margin: 0 auto;
 }
 
 
 /* ESTILOS HOME */
-#home,#sobre,#projetos,#habilidades, footer{
-    padding: 0em 2em;
+#home,#sobre,#projetos,#habilidades{
+    padding: 60px 100px 0px 100px;
 }
 
 #home {
@@ -119,10 +119,8 @@ main{
 
 #home aside{
     padding-top: 100px;
-    padding-left: 100px;
-    
     line-height: 50px;
-    
+    padding-left: 50px;
 }
 
 #home section.nome-sobrenome{
@@ -138,22 +136,22 @@ main{
     flex-direction: column;
     text-align: center;
     justify-content:center;
-
-    border: 1px solid aqua;
 }
 
 #home #nome{
-    border: 1px solid aqua;
+    position: relative;
+    right: 2.4rem;
     
     width: max-content;
     font-size: 5em;
     font-weight: 500;
 }
 #home #sobrenome{
-    border: 1px solid aqua;
+    position: relative;
+    left: 1rem;
 
     width: max-content;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 400;
 }
 
@@ -183,11 +181,15 @@ main{
 
     border-radius: 15px;
 }
-#home #redes{
+#home button#linkedin a{
+    padding: 6px 60px;
+}
+
+#home button#outras-redes{
     color: var(--corAmarelo);
     background-color: var(--corBranco);
     text-decoration: underline;
-    font-size: larger;
+    font-size: 1.4em;
 
     padding: 10px;
     margin-bottom: 40px;
@@ -200,9 +202,8 @@ main{
 #home picture img{
     width: 400px;
     padding-top: 30px;
-    margin-right: 100px;
     object-fit: contain;
-
+    
     min-height: 550px;
 }
 
@@ -212,6 +213,32 @@ main{
 #sobre{
     background: var(--corCinzaClaro);
     color: var(--corBranco);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sobre h1{
+    padding-bottom: 30px;
+    font-size: 3em;
+    text-align: right;
+}
+
+#sobre p{
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+#sobre picture img{
+    width: 400px;
+    object-fit: contain;
+
+    margin-right: 100px;
+    margin-bottom: 100px;
+
+    border: 6px solid var(--corBranco);
+    border-radius: 100%;
 }
 
 /* ESTILOS PROJETOS */
@@ -232,4 +259,14 @@ main{
 footer{
     background-color: var(--corCinzaEscuro);
     color: var(--corBranco);
+    align-content: center;
+
+}
+
+section.rodape{
+    height: 5em;  
+    width: 1200px;
+
+    align-content: center;
+    margin: 0 auto;
 }
