@@ -122,7 +122,7 @@ main{
 }
 
 #home section.nome-sobrenome{
-    background-image: url('../components/forms/Circulo.png');
+    background-image: url('../components/img/Circulo.png');
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
