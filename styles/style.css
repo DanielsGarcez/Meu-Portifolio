@@ -61,6 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--corCinzaEscuro);
+    box-shadow: 0px 3px 3px var(--corCinzaMaisEscuro);
     
     width: 100vw;
     height: 2em;    
@@ -126,6 +127,8 @@ main{
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 1px 1px 10px var(--corCinzaMaisEscuro);
+    border-radius: 50%;
 
     width: 300px;
     height: 300px;
@@ -254,7 +257,7 @@ main{
 /* ESTILOS PROJETOS */
 #meus-projetos{
     background: var(--corBranco);
-    color: var(--corPreto);
+    color: var(--corCinzaEscuro);
 }
 
 #meus-projetos h1{
@@ -328,7 +331,6 @@ main{
 
 #habilidades picture img.icons:hover{
     cursor: pointer;
-    
 
     background-color: var(--corAmarelo);
     transition: 0.5s ease-in-out;
