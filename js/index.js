@@ -1,36 +1,46 @@
 "use strict";
+// Fazer uma lista [] com as URLs das imagens 
 
-let iconsLight = new Array [
-    URL("../components/icons/HtmlLogo.png"),
-    URL("../components/icons/CssLogo.png"),
-    URL("../components/icons/JsLogo.png"),
-    URL("../components/icons/GithubLogo.png"),
-    URL("../components/icons/NodeLogo.png"),
-    URL("../components/icons/FigmaLogo.png")
-]
+// const HtmlLight = ("../components/icons/HtmlLogo.png")
+// const CssLight = ("../components/icons/CssLogo.png")
+// const JsLight = ("../components/icons/JsLogo.png")
+// const GithubLight = ("../components/icons/GithubLogo.png")
+// const NodeLight = ("../components/icons/NodeLogo.png")
+// const FigmaLight = ("../components/icons/FigmaLogo.png")
 
-let iconsDark = new Array [
-    URL("../components/icons/HtmlLogoDark.png"),
-    URL("../components/icons/CssLogoDark.png"),
-    URL("../components/icons/JsLogoDark.png"),
-    URL("../components/icons/GithubLogoDark.png"),
-    URL("../components/icons/NodeLogoDark.png"),
-    URL("../components/icons/FigmaLogoDark.png")
-]
+// const HtmlDark = ("../components/icons/HtmlLogoDark.png")
+// const CssDark = ("../components/icons/CssLogoDark.png")
+// const JsDark = ("../components/icons/JsLogoDark.png")
+// const GithubDark = ("../components/icons/GithubLogoDark.png")
+// const NodeDark = ("../components/icons/NodeLogoDark.png")
+// const FigmaDark = ("../components/icons/FigmaLogoDark.png")
 
-/*
-Fazer uma lista [] com as URLs das imagens 
+// const iconsLight = [
+//     HtmlLight,
+//     CssLight,
+//     JsLight,
+//     GithubLight,
+//     NodeLight,
+//     FigmaLight
+// ]
 
-*/
+// const iconsDark = [
+//     HtmlDark,
+//     CssDark,
+//     JsDark,
+//     GithubDark,
+//     NodeDark,
+//     FigmaDark
+// ]
 
-function trocarImagem(){
-    let image = document.getElementById("HTML-LOGO");
-    if(image.src = "components/icons/HtmlLogo.png"){
-        image.src = "../components/icons/HtmlLogoDark.png"
-        console.log("mudou para dark")
-    }
-    else if(image.src = "../components/icons/HtmlLogoDark.png"){
-        image.src = "components/icons/HtmlLogo.png"
-        console.log("mudou prara light")
-    }
-}
+// function mudarImagem(){
+//     let image = document.querySelector("#HTML-LOGO");
+//     if(image.src = iconsLight[0]){
+//         image.src = iconsDark[0]
+//         console.log("mudou para dark: "+iconsDark[0])
+//     }
+//     else if(image.src = iconsDark[0]){
+//         image.src = iconsLight[0]
+//         console.log("mudou para light")
+//     }
+// }

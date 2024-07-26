@@ -1,4 +1,7 @@
 :root{
+
+    /*  Fontes:    */
+
     .bebas-neue-regular {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
@@ -11,6 +14,8 @@
         font-style: normal;
     }
     
+    /*  Variaveis de Cores:    */
+
     --corPreto: #000;
     --corCinzaMaisEscuro: #111111;
     --corCinzaEscuro: #262626;
@@ -18,8 +23,20 @@
     --corAmarelo: #FCC812;
     --corBranco: #fff;
 
+    /*  Variaveis de Texto:    */
     --fonteBebasNeue: "Bebas Neue";
     --fonteArchivoNarrow: "Archivo Narrow";
+
+    /*  Variaveis de Imagens*/
+    --CirculoAmarelo: URL("../components/img/Circulo.png");
+
+    /*  Variaveis de Icons*/
+    --HtmlDark: URL("../components/icons/HtmlLogoDark.png");
+    --CssDark: URL("../components/icons/CssLogoDark.png");
+    --JsDark: URL("../components/icons/JsLogoDark.png");
+    --GithubDark: URL("../components/icons/GithubLogoDark.png");
+    --NodeDark: URL("../components/icons/NodeLogoDark.png");
+    --FigmaDark: URL("../components/icons/FigmaLogoDark.png");
 }
 
 *{
@@ -123,7 +140,7 @@ main{
 }
 
 #home section.nome-sobrenome{
-    background-image: url('../components/img/Circulo.png');
+    background-image: var(--CirculoAmarelo);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -321,23 +338,65 @@ main{
     padding-right: 50px;
 }
 
+
+#habilidades picture{
+    transition: 0.3s ease-out;
+    background-color: var(--corCinzaEscuro);
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+#habilidades picture:hover{
+    background-color: var(--corAmarelo);
+    transition: 0.5s ease-in;
+}
+
 #habilidades picture img.icons{
+    transition: 0.5s ease-in-out;
     border-radius: 20px;
     height: 150px;
     padding: 15px;
-
-    background-color: var(--corCinzaEscuro);
 }
 
-#habilidades picture img.icons:hover{
-    cursor: pointer;
-
-    background-color: var(--corAmarelo);
+#habilidades picture img#HTML-LOGO:hover{
     transition: 0.5s ease-in-out;
-
+    content: var(--HtmlDark);
     position: relative;
     padding: 5px;
 }
+#habilidades picture img#CSS-LOGO:hover{
+    transition: 0.5s ease-in-out;
+    content: var(--CssDark);
+    position: relative;
+    padding: 5px;
+}
+#habilidades picture img#JS-LOGO:hover{
+    transition: 0.5s ease-in-out;
+    content: var(--JsDark);
+    position: relative;
+    padding: 5px;
+}
+#habilidades picture img#GITHUB-LOGO:hover{
+    transition: 0.5s ease-in-out;
+    content: var(--GithubDark);
+    position: relative;
+    padding: 5px;
+}
+#habilidades picture img#NODE-LOGO:hover{
+    transition: 0.5s ease-in-out;
+    content: var(--NodeDark);
+    position: relative;
+    padding: 5px;
+}
+#habilidades picture img#FIGMA-LOGO:hover{
+    transition: 0.5s ease-in-out;
+    content: var(--FigmaDark);
+    position: relative;
+    padding: 5px;
+}
+
+
 
 /* ESTILOS RODAPÉ */
 footer{
