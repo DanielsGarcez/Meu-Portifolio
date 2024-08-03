@@ -22,6 +22,7 @@
     --corCinzaClaro: #383838;
     --corAmarelo: #FCC812;
     --corBranco: #fff;
+    --corSombra: #000000af;
 
     /*  Variaveis de Texto:    */
     --fonteBebasNeue: "Bebas Neue";
@@ -67,9 +68,6 @@ body{
     margin: 0 auto;
 }
 
-
-@layer header, main;
-
 /* ESTILOS CABEÇALHO */
 .header{
     position: fixed;
@@ -78,7 +76,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--corCinzaEscuro);
-    box-shadow: 0px 3px 3px var(--corCinzaMaisEscuro);
+    box-shadow: 0px 3px 3px var(--corSombra);
     
     width: 100vw;
     height: 2em;    
@@ -144,7 +142,7 @@ main{
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 1px 1px 10px var(--corCinzaMaisEscuro);
+    box-shadow: 5px 5px 10px var(--corSombra);
     border-radius: 50%;
 
     width: 300px;
@@ -296,15 +294,46 @@ main{
     padding-bottom: 130px;
 }
 
-#meus-projetos picture img.thumbnail{
+#meus-projetos picture{
     height: 200px;
-    border: 0.4em solid var(--corAmarelo);
+    width: 320px;
+    border: 0.2em solid var(--corAmarelo);
+    transition: 0.5s ease-in-out;
+    
+    text-align: center;
+    align-content: center;
+    content-visibility: hidden;
+
+    font-size: 2em;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    color: var(--corBranco)
+}
+#meus-projetos picture:hover{
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0px -30px 1000px 20px var(--corSombra);
+    content-visibility: visible;
 }
 
-#meus-projetos picture img.thumbnail:hover{
-    cursor: pointer;
+#meus-projetos picture.thumbnail{
+    background-image: url(../components/img/DefaultProjetos.png);
+    background-size: 100%;
 }
-
+#meus-projetos picture#ProjetoAndroid{
+    background-image: url(../components/img/ProjetoAndroid.png);
+}
+#meus-projetos picture#ProjetoCordel{
+    background-image: url(../components/img/ProjetoCordelModerno.png);
+}
+#meus-projetos picture{
+    background-image: url(../components/img/ProjetoAndroid.png);
+}
+#meus-projetos picture{
+    background-image: url(../components/img/ProjetoAndroid.png);
+}
+#meus-projetos picture{
+    background-image: url(../components/img/ProjetoAndroid.png);
+}
 
 
 /* ESTILOS HABILIDADES */
@@ -360,39 +389,27 @@ main{
 }
 
 #habilidades picture img#HTML-LOGO:hover{
-    transition: 0.5s ease-in-out;
     content: var(--HtmlDark);
-    position: relative;
     padding: 5px;
 }
 #habilidades picture img#CSS-LOGO:hover{
-    transition: 0.5s ease-in-out;
     content: var(--CssDark);
-    position: relative;
     padding: 5px;
 }
 #habilidades picture img#JS-LOGO:hover{
-    transition: 0.5s ease-in-out;
     content: var(--JsDark);
-    position: relative;
     padding: 5px;
 }
 #habilidades picture img#GITHUB-LOGO:hover{
-    transition: 0.5s ease-in-out;
     content: var(--GithubDark);
-    position: relative;
     padding: 5px;
 }
 #habilidades picture img#NODE-LOGO:hover{
-    transition: 0.5s ease-in-out;
     content: var(--NodeDark);
-    position: relative;
     padding: 5px;
 }
 #habilidades picture img#FIGMA-LOGO:hover{
-    transition: 0.5s ease-in-out;
     content: var(--FigmaDark);
-    position: relative;
     padding: 5px;
 }
 
