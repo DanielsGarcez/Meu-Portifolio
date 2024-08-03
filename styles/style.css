@@ -23,6 +23,7 @@
     --corAmarelo: #FCC812;
     --corBranco: #fff;
     --corSombra: #000000af;
+    --corTransparente: #00000000;
 
     /*  Variaveis de Texto:    */
     --fonteBebasNeue: "Bebas Neue";
@@ -307,12 +308,13 @@ main{
     font-size: 2em;
     font-weight: bold;
     font-variant-caps: all-petite-caps;
-    color: var(--corBranco)
+    color: var(--corTransparente);
 }
 #meus-projetos picture:hover{
-    transition: 0.3s ease-in-out;
+    transition: 0.3s linear;
     box-shadow: inset 0px -30px 1000px 20px var(--corSombra);
     content-visibility: visible;
+    color: var(--corBranco)
 }
 
 #meus-projetos picture.thumbnail{
